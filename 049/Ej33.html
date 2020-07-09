@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="700" height="400"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+//Tipo de letra, tamaño, fuente
+contexto.font = '80pt Courier';
+
+//Texto a imprimir, posición X, posición Y
+var texto = "Prueba";
+contexto.fillText(texto, 10, 100);
+
+//Tamaño del texto
+var tamano = contexto.measureText(texto);
+var ancho = tamano.width;
+alert(ancho);
+</script>
+</body></html>

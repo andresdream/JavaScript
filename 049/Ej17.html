@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="300" height="300"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+var posX = lienzo.width / 2;  //Centro del canvas en X
+var posY = lienzo.height / 2; //Centro del canvas en Y
+var Radio = 100; //Radio del círculo
+var AnguloInicio =  0 * Math.PI / 180; //Angulo inicial (0 grados) en radianes
+var AnguloFinal = 360 * Math.PI / 180; //Angulo final (360 grados) en radianes
+var DibujaContraReloj = false;
+
+contexto.beginPath();
+contexto.arc(posX, posY, Radio, AnguloInicio, AnguloFinal, DibujaContraReloj);
+contexto.lineWidth = 10; //Ancho de la línea
+contexto.strokeStyle = 'green'; //Color
+contexto.stroke();	
+</script></body></html>

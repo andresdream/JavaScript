@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="600" height="600"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+contexto.beginPath(); //Inicia el camino
+
+//"Curvas" usando líneas
+for (var mover=0; mover<=600; mover+=10){
+	contexto.moveTo(0, mover);
+	contexto.lineTo(mover, 600);
+
+	contexto.moveTo(mover, 0);
+	contexto.lineTo(600, mover);
+}
+contexto.stroke();	
+</script>
+</body></html>

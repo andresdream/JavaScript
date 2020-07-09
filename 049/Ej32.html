@@ -1,0 +1,21 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="700" height="400"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+//Dibuja una línea para hacer referencia
+contexto.moveTo(350, 0);
+contexto.lineTo(350, 350);
+contexto.stroke();
+
+//Tipo de letra, tamaño, fuente
+contexto.font = 'bold 45pt Verdana';
+
+//Alineación del texto: left, center, right, start, end
+contexto.textAlign = 'end';
+
+//Texto a imprimir, posición X, posición Y
+contexto.fillText('Alinear', 350, 100);
+</script>
+</body></html>

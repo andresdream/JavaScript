@@ -1,0 +1,16 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="300" height="300"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+contexto.beginPath();
+
+contexto.moveTo(80,20); //Punto inicial
+contexto.bezierCurveTo(60, 100, 200, 90, 240, 25);
+
+contexto.lineWidth = 5; //Ancho de la línea
+contexto.strokeStyle = 'green'; //Color
+contexto.stroke();
+</script>
+</body></html>

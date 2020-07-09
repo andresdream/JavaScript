@@ -1,0 +1,15 @@
+<!DOCTYPE HTML><html><head></head><body>
+<canvas id="milienzo" width="400" height="400"></canvas>
+<script>
+var lienzo = document.getElementById('milienzo');
+var contexto = lienzo.getContext('2d');
+
+//Dibuja varias líneas horizontales
+contexto.beginPath(); //Inicia el camino
+for (var coordY=10; coordY<=500; coordY+=10){
+	contexto.moveTo(5, coordY);
+	contexto.lineTo(600, coordY);
+}
+contexto.stroke();
+</script>
+</body></html>
