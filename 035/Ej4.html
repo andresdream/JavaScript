@@ -1,0 +1,26 @@
+<!DOCTYPE HTML><html><head><script>
+var tabla = GeneraArregloBidimensional(10, 15, '.');
+ImprimeArregloBidimensional(tabla);
+
+/* Función genérica para crear arreglos bidimensionales
+   con el número de filas y columnas dado y llena cada celda
+   de un valor */
+function GeneraArregloBidimensional(filas, columnas, valor){
+  var arreglo = [];
+  for (var fila=0; fila<filas; fila++){
+		arreglo[fila] = [];
+		for (var columna=0; columna<columnas; columna++)
+			arreglo[fila][columna]=valor;
+	}
+  return arreglo;
+}
+
+//Función genérica para imprimir un arreglo bidimensional
+function ImprimeArregloBidimensional(arreglo){
+	for (var fila=0; fila < arreglo.length; fila++){
+		document.write("<br>");
+		for (var columna=0; columna < arreglo[fila].length; columna++)
+			document.write(arreglo[fila][columna]);
+	}
+}
+</script></head></html>

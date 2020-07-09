@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html><head><script>
+//Quita los espacios de una cadena
+var cadena = "  a b   c   d  e  f  ";
+var nueva = "";
+for (var cont=0; cont<cadena.length; cont++)
+	if (cadena[cont] != ' ')
+		nueva += cadena[cont];
+
+document.write("Original: ["  + cadena + "]<br>");
+document.write("Sin espacios : ["  + nueva + "]<br>");
+</script></head></html>

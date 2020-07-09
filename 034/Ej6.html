@@ -1,0 +1,36 @@
+<!DOCTYPE HTML><html><head><script>
+//Cifrado sencillo con clave de cifrado
+var cadena = prompt("Escriba texto");
+var clave = prompt("Clave de cifrado");
+
+var cifrada = Cifrar(cadena, clave);
+document.write("Original: "  + cadena + "<br>");
+document.write("Cifrado: "  + cifrada + "<br>");
+
+var descifra = DesCifrar(cifrada, clave);
+document.write("Descifrado: "  + descifra + "<br>");
+
+function Cifrar(cadena, clave){
+	var cifrada = "";
+	var clavecont = 0;
+	for (var cont=0; cont<cadena.length; cont++){
+		//Cada letra de la clave genera un desplazamiento  
+		desplaza = clave[clavecont++].charCodeAt()%20;
+		if (clavecont >= clave.length) clavecont = 0; //Si se llega al final de la clave
+		cifrada += String.fromCharCode(cadena[cont].charCodeAt()+desplaza);
+	}
+	return cifrada;
+}
+
+function DesCifrar(cadena, clave){
+	var descifrada = "";
+	var clavecont = 0;
+	for (var cont=0; cont<cadena.length; cont++){
+		//Cada letra de la clave genera un desplazamiento  
+		desplaza = clave[clavecont++].charCodeAt()%20;
+		if (clavecont >= clave.length) clavecont = 0; //Si se llega al final de la clave
+		descifrada += String.fromCharCode(cadena[cont].charCodeAt()-desplaza);
+	}
+	return descifrada;
+}
+</script></head></html>

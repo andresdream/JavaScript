@@ -1,0 +1,41 @@
+<!DOCTYPE HTML><html><head><script>
+/* Crear un tablero de ajedrez de 8*8, poner en una posición al 
+   azar un Alfil y mostrar su ataque */
+var tabla = GeneraArregloBidimensional(8, 8, '.');
+PoneAlfilAzar(tabla);
+ImprimeArregloBidimensional(tabla);
+
+function PoneAlfilAzar(arreglo){ 
+	var filaAzar = Math.floor(Math.random()*arreglo.length);
+	var coluAzar = Math.floor(Math.random()*arreglo[0].length);
+	var tmpFil=filaAzar;
+	var tmpCol=coluAzar;
+	while(tmpFil>=0 && tmpCol>=0) { arreglo[tmpFil][tmpCol]='x'; tmpFil--; tmpCol--; }
+	tmpFil=filaAzar; tmpCol=coluAzar;
+	while(tmpFil>=0 && tmpCol<8)  { arreglo[tmpFil][tmpCol]='x'; tmpFil--; tmpCol++; }
+	tmpFil=filaAzar; tmpCol=coluAzar;
+	while(tmpFil<8 && tmpCol<8)   { arreglo[tmpFil][tmpCol]='x'; tmpFil++; tmpCol++; }
+	tmpFil=filaAzar; tmpCol=coluAzar;
+	while(tmpFil<8 && tmpCol>=0)  { arreglo[tmpFil][tmpCol]='x'; tmpFil++; tmpCol--; }
+	arreglo[filaAzar][coluAzar] = 'A';
+}
+
+function GeneraArregloBidimensional(filas, columnas, valor){
+	var arreglo = [];
+	for (var fila=0; fila<filas; fila++){
+		arreglo[fila] = [];
+		for (var columna=0; columna<columnas; columna++)
+			arreglo[fila][columna]=valor;
+  }
+  return arreglo;
+}
+
+function ImprimeArregloBidimensional(arreglo){
+	for (var fila=0; fila < arreglo.length; fila++){
+		document.write("<p style='font-family:courier new;'>");
+		for (var columna=0; columna < arreglo[fila].length; columna++)
+			document.write(arreglo[fila][columna]);
+		document.write("</p>");
+	}
+}
+</script></head></html>

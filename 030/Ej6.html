@@ -1,0 +1,16 @@
+<!DOCTYPE HTML><html><head><script>
+var valores = new Array();
+valores.push(15000);
+valores.push(18000);
+valores.push(34000);
+valores.push(17000);
+valores.push(8000);
+
+//Operación con vectores: acumulado
+var acumula = 0;
+for (var cont=0; cont < valores.length; cont++){
+	acumula += valores[cont];
+}
+		
+document.write("Acumulado es: " + acumula);
+</script></head></html>

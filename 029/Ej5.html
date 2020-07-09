@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html><head><script>
+//Captura el error
+var expresion = prompt("Escriba expresión algebraica");
+try {
+	var valor = eval(expresion);
+	document.write("Valor calculado es: " + valor);
+}
+catch(errordetectado){
+	document.write("Mensaje de error: " + errordetectado.message);
+}
+</script></head></html>

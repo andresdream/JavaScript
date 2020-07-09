@@ -1,0 +1,18 @@
+<!DOCTYPE HTML><html><head><script>
+//Clase Madre
+class Madre {
+	constructor() {
+		document.write("<br>Constructor clase madre");
+	}
+}
+
+//Clase Hija (hereda de la madre)
+class Hija extends Madre {
+	constructor() {
+		super(); //Llama al constructor de la clase madre
+		document.write("<br>Constructor clase hija");
+	}
+}
+
+prueba = new Hija(); //Imprime "Constructor clase madre" y "Constructor clase hija"
+</script></head></html>

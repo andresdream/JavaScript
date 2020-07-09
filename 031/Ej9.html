@@ -1,0 +1,18 @@
+<!DOCTYPE HTML><html><head><script>
+var datos = [-363, -1793, -2601, -2541, 6376, 6053, 503, 1601, -2994, 648];
+document.write("Original: " + datos + "<br>");
+var ordenado = quicksort(datos);
+document.write("Ordenado: " + ordenado + "<br>");
+
+function quicksort(arreglo) {
+    if (arreglo.length == 0) return [];
+    var izquierdo = [], derecho = [], pivote = arreglo[0];
+    for (var i = 1; i < arreglo.length; i++)
+		if (arreglo[i] < pivote)
+			izquierdo.push(arreglo[i]);
+		else
+			derecho.push(arreglo[i]);
+
+    return quicksort(izquierdo).concat(pivote, quicksort(derecho));
+}
+</script></head></html>

@@ -1,0 +1,10 @@
+<!DOCTYPE HTML><html><head><script>
+//Potencia de un número
+var valor = potencia(2, 7); //Retorna 2^7
+document.write(valor);
+
+function potencia(numero, elevado){
+	if (elevado==1) return numero;
+	return numero * potencia(numero, elevado - 1);
+}
+</script></head></html>

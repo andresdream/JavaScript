@@ -1,0 +1,21 @@
+<!DOCTYPE HTML><html><head><script>
+//Definir una clase
+class UnaClase {
+    //La convención es poner un _ al principio
+	//del nombre del método para indicar que es
+	//un método privado
+	_UnMetodo(){
+		document.write("Método privado<br>"); 
+	}
+	
+	_OtroMetodo(){
+		document.write("Otro método privado<br>"); 
+	}
+}
+
+//Instanciar un objeto de esa clase
+var probar = new UnaClase();
+probar._UnMetodo();
+probar._OtroMetodo();
+
+</script></head></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML><html><head><script>
+class MiClase {
+	constructor(texto) {
+		this._texto = texto; //Define el atributo "privado"
+	}
+	//Getter
+	get texto() { 
+		document.write("Retorna valor <br>");
+		return this._texto;
+	}
+	//Setter
+	set texto(valor) {
+		document.write("Cambia valor <br>");
+		this._texto = valor;
+	}
+}
+
+probar = new MiClase('Grisú y Suini');
+document.write(probar.texto + "<br>");
+probar.texto = "Sally";
+document.write(probar.texto + "<br>");
+</script></head></html>

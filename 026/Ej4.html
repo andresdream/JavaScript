@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html><head><script>
+//Convertir a binario
+ConvierteBinario(70);
+
+function ConvierteBinario(numero){
+	if (numero!=0){
+		ConvierteBinario(Math.floor(numero/2));
+		document.write(numero%2);
+	}
+}
+</script></head></html>

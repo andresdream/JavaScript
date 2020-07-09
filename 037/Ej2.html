@@ -1,0 +1,9 @@
+<!DOCTYPE HTML><html><head><script>
+//Funciones que reciben distinto número de parámetros
+FuncionDinamica("paso", "varios", "argumentos", 7, 1, "numeros", 3, "y texto");
+
+function FuncionDinamica(){
+	for (var cont=0; cont < arguments.length; cont++)
+		document.write(arguments[cont] + "<br>");
+}
+</script></head></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE HTML><html><head><script>
+/* Variable aleatoria
+   Distribución Normal. Generar una variable aleatoria con media M y desviación D
+   variable = M + D * c
+   donde c = cos(2*PI*r2)*raizcuadrada(-2*LogarimoNatural(r1))
+   r1 y r2 son números aleatorios	 */
+var M = 100;
+var D = 7;	 
+for (var cont=1; cont<=100; cont++){
+	var r1 = Math.random();
+	var r2 = Math.random();
+	var c = Math.cos(2*Math.PI*r2)*Math.sqrt(-2*Math.log(r1));
+	var variable = M + D * c;
+	document.write(variable + ", ");
+}
+</script></head></html>

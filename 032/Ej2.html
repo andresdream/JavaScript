@@ -1,0 +1,9 @@
+<!DOCTYPE HTML><html><head><script>
+var meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+var fecha = new Date();
+var dia = fecha.getDate();
+var mes = fecha.getMonth();
+var anyo = fecha.getFullYear();
+var mesnombre = meses[mes]; //Convierte el valor numérico en nombre de mes
+document.write(dia + " de " + mesnombre + " de " + anyo);
+</script></head></html>

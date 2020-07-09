@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html><head><script>
+var valA = 64;
+var valB = 17;
+document.write("valores: " + valA + " , " + valB + "<br>");
+
+//Para intercambiar los valores de esas variables se puede hacer uso de operadores de bit (XOR)
+valA^=valB;
+valB^=valA;
+valA^=valB;
+document.write("valores: " + valA + " , " + valB + "<br>");
+</script></head></html>

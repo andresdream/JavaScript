@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head><script>
+//Operación con vectores: promedio
+var valores = new Array();
+valores.push(15000);
+valores.push(18000);
+valores.push(34000);
+valores.push(17000);
+valores.push(8000);
+
+//Acumula los valores
+var acumula = 0;
+for (var cont=0; cont < valores.length; cont++){
+	acumula += valores[cont];
+}
+
+//Calcula el promedio			
+var promedio = acumula / valores.length;
+document.write("Promedio es: " + promedio);
+</script></head></html>
