@@ -1,0 +1,23 @@
+<!DOCTYPE HTML><html><head>
+<script src="Libreria.js"></script>
+<script>
+var minimo = 1000;
+var maximo = 9999;
+
+//Cantidad de números primos que sus cifras están entre 3 y 7
+var contar = 0;
+for (var num = minimo; num<=maximo; num++){
+    if (EsPrimo(num) && LaCifraMasBaja(num) >= 3 && LaCifraMasAlta(num) <= 7) {
+				document.write(num + ", ");
+				contar = contar + 1
+    }
+}
+document.write("<br>");
+Imprime(minimo, maximo, "Cantidad de números primos que sus cifras están entre 3 y 7", contar);
+
+
+//Imprime el resultado en el navegador
+function Imprime(minimo, maximo, texto, resultado){
+	document.write("Entre " + minimo + " y " + maximo + ". " + texto + ": " + resultado + "<br>");
+}
+</script></head></html>

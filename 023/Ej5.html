@@ -1,0 +1,23 @@
+<!DOCTYPE HTML><html><head>
+<script src="Libreria.js"></script>
+<script>
+var minimo = 8000;
+var maximo = 9000;
+
+//Cantidad de números que cada una de sus tres últimas cifras es menor de 5
+var cuenta = 0;
+for (var num = minimo; num<=maximo; num++){
+    if (AntepenultimaCifra(num) < 5 && PenultimaCifra(num) < 5 && UltimaCifra(num) < 5){
+			document.write(num + ", ");
+               cuenta = cuenta + 1
+	}
+}
+document.write("<br>");
+Imprime(minimo, maximo, "Cantidad de números que cada una de sus tres últimas cifras es menor de 5", cuenta);
+
+
+//Imprime el resultado en el navegador
+function Imprime(minimo, maximo, texto, resultado){
+	document.write("Entre " + minimo + " y " + maximo + ". " + texto + ": " + resultado + "<br>");
+}
+</script></head></html>
