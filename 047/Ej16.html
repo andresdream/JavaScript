@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html><head>
+<script> 
+function formularioenvia(){ alert("activo envío"); }
+function entrafocotexto() { alert("está en la caja de texto"); }
+</script></head>
+
+<body>
+	<form id="formulario" method="post" onsubmit="formularioenvia()">
+		<input type="text" id="texto" onfocus="entrafocotexto()" />
+		<input type="submit" id="boton" value="envía" />
+	</form>
+</body>
+</html>

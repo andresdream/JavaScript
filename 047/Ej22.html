@@ -1,0 +1,14 @@
+<!DOCTYPE HTML><html><head>
+<script> 
+function formularioenvia(){ alert("activo envío"); }
+function cambiatexto() { alert("Ha cambiado el texto"); }
+</script></head>
+
+<body>
+	<form id="formulario" method="post" onsubmit="formularioenvia()">
+		<p><input type="text" id="texto" onchange="cambiatexto()" /></p>
+		<p><input type="text" id="otro" /></p>
+		<p><input type="submit" id="boton" value="envía" /></p>
+	</form>
+</body>
+</html>

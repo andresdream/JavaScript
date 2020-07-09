@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html><head>
+<script> 
+function formularioenvia(){ alert("activo envío"); }
+function sueltatecla() { alert("Ha soltado una tecla"); }
+</script></head>
+
+<body>
+	<form id="formulario" method="post" onsubmit="formularioenvia()">
+		<input type="text" id="texto" onkeyup="sueltatecla()" />
+		<input type="submit" id="boton" value="envía" />
+	</form>
+</body>
+</html>
