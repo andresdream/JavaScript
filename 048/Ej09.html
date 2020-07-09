@@ -1,0 +1,14 @@
+<!DOCTYPE HTML><html><head><script>
+//Obtiene la lista de objetos con <p>, trae el segundo
+//y muestra el código HTML interno
+function ChequeaObjetos(){
+  var obtenerobjetos=document.getElementsByTagName("p");
+  alert("Captura objeto <p> : " + obtenerobjetos[1].innerHTML);
+}
+</script></head>
+<body>
+<p>Primer párrafo</p>
+<p><b>Segundo párrafo</b></p>
+<p><big>Tercer párrafo</big></p>
+<input type="button" onclick="ChequeaObjetos()" value="Objetos con <p>">
+</body></html>

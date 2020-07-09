@@ -1,0 +1,21 @@
+<!DOCTYPE HTML><html><head><script>
+//Cuando se salta a otra caja de texto, se valida si
+//el dato es un número válido
+
+//Valida si lo que ingresa es un número
+function validanumero(entrada){
+	if (entrada.value!=""){
+		if (isNaN(entrada.value))
+			entrada.className='error';
+		else
+			entrada.className='';
+	}
+}
+</script>
+<style type="text/css">
+input.error{ border: 1px solid red; background-color: yellow; }
+</style></head>
+<body>
+		<label>Valor: <input type="text" id="Numero" onblur="validanumero(this)" /></label>
+		<label> Dato: <input type="text" id="Dato" /></label>
+</body></html>

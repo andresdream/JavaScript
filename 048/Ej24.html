@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html><head><script>
+//Muestra cada hipervínculo que hay en el documento
+function MuestraEnlaces(){
+	for(var cont=0; cont<document.links.length; cont++)
+		alert("Enlace: " + document.links[cont].href);
+}
+</script></head>
+<body>
+<a href="http://darwin.50webs.com">Mi página web</a><br>
+<a href="https://openlibra.com/es/book/redes-neuronales-parte-1">Redes neuronales</a><br>
+<a href=" https://openlibra.com/es/book/evaluador-de-expresiones-algebraicas-ii">Evaluador de expresiones</a><br>
+<input type="button" onclick="MuestraEnlaces()" value="¿Enlaces?">
+</body></html>

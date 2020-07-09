@@ -1,0 +1,21 @@
+<!DOCTYPE HTML><html><head><script>
+//Obtiene la lista de objetos tipo <p>
+//y cambia la apariencia de cada uno
+function CambiaObjetos(){
+	var arreglo = new Array();
+	var arreglo = document.getElementsByTagName("p");
+	for (var cont=0; cont<arreglo.length; cont++)
+	{ //Cambia la apariencia de cada <p>
+		arreglo[cont].style.color = "red";
+		arreglo[cont].style["font-family"] = "Impact";
+		arreglo[cont].style["font-size"] = "40px";
+	}
+}
+</script></head>
+<body>
+<p>Primer párrafo</p>
+<p>Segundo párrafo</p>
+<p>Tercer párrafo</p>
+<p>Cuarto párrafo</p>
+<input type="button" onclick="CambiaObjetos()" value="Objetos con <p>">
+</body></html>

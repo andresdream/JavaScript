@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html><head><script>
+//Obtiene la lista de objetos tipo entrada, trae el primero
+//y muestra que valor tiene
+function ChequeaObjetos(){
+  var obtenerobjetos=document.getElementsByTagName("input");
+  alert("Valor escrito es : " + obtenerobjetos[0].value);
+}
+</script></head>
+<body>
+<input type="text"><br>
+<input type="text"><br>
+<input type="button" onclick="ChequeaObjetos()" value="Leer valor">
+</body></html>

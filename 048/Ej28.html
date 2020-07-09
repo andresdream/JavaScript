@@ -1,0 +1,12 @@
+<!DOCTYPE HTML><html><head><script>
+//Trae el número de elementos con un determinado "name" 
+function TotalElementos(){
+	var elementosNombre = document.getElementsByName("prueba");
+	alert("Número de elementos: " + elementosNombre.length);
+}
+</script></head><body>
+<input name="prueba" type="text" value="valor A"><br>
+Selección: <input name="prueba" type="radio" value="valor B"><br>
+Botón:  <input name="prueba" type="button" value="valor C"><br>
+<input type="button" onclick="TotalElementos()" value="¿Total Elementos?">
+</body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML><html><head>
+<style type="text/css">
+.unestilo{ color: blue; font-family: impact; font-size: 50px; }
+</style>
+<script>
+//Aplica un atributo al primer <h1>
+function AplicarAtributo(){
+	var objetoH1 = document.getElementsByTagName("H1")[0];
+	var Atributo = document.createAttribute("class");
+	Atributo.value = "unestilo";
+	objetoH1.setAttributeNode(Atributo);
+}
+</script></head>
+<body>
+<h1>Esta es una prueba</h1>
+<h1>Segundo texto</h1>
+<button onclick="AplicarAtributo()">Aplicar Atributo</button>
+</body></html>

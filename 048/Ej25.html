@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head><script>
+//Crea controles (botones) en tiempo de ejecución
+function CreaBotones(){
+	//Genera un botón
+	var boton = document.createElement("button");
+	
+	//Genera un texto
+	var texto = document.createTextNode("Presionar");
+	
+	//Agrega el texto al botón
+	boton.appendChild(texto);
+	
+	//Agrega el botón al <body>
+	document.body.appendChild(boton);
+}
+</script></head>
+<body>
+<input type="button" onclick="CreaBotones()" value="Generar Botones">
+</body></html>

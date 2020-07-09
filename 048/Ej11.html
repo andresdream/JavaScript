@@ -1,0 +1,17 @@
+<!DOCTYPE HTML><html><head><script>
+//Obtiene la lista de objetos tipo <p>
+//y muestra el valor que tiene cada uno
+function ChequeaObjetos(){
+	var arreglo = new Array();
+	var arreglo = document.getElementsByTagName("p");
+	for (var cont=0; cont<arreglo.length; cont++)
+		alert("Contenido : " + arreglo[cont].innerHTML);
+}
+</script></head>
+<body>
+<p>Primer párrafo</p>
+<p><b>Segundo párrafo</b></p>
+<p>Tercer párrafo</p>
+<p>Cuarto párrafo</p>
+<input type="button" onclick="ChequeaObjetos()" value="Objetos con <p>">
+</body></html>

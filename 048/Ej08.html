@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html><head><script>
+//Hace un conteo de objetos con la etiqueta <p> en la página
+function ChequeaObjetos(){
+	var obtenerobjetos=document.getElementsByTagName("p");
+	alert("Total objetos con <p> : " + obtenerobjetos.length);
+}
+</script></head>
+<body>
+<p>Primer párrafo</p>
+<p>Segundo párrafo</p>
+<p>Tercer párrafo</p>
+<input type="button" onclick="ChequeaObjetos()" value="Objetos con <p>">
+</body></html>

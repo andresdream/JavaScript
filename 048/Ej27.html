@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head><script>
+//Crea etiquetas en tiempo de ejecución
+function CreaEtiquetas(){
+	var etiqueta = document.createElement("H1");
+	var texto = document.createTextNode("Este es un texto");
+	etiqueta.appendChild(texto);
+	document.body.appendChild(etiqueta);
+}
+
+//Cuenta el número de etiquuetas qhe hay en el documento
+function TotalEtiquetas(){
+	var etiquetas = document.getElementsByTagName("H1");
+	alert("Total etiquetas: " + etiquetas.length); 
+}
+</script></head>
+<body>
+<input type="button" onclick="CreaEtiquetas()" value="Generar Etiquetas">
+<input type="button" onclick="TotalEtiquetas()" value="Total Etiquetas">
+</body></html>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML><html><head><script>
+//Abre determinadas ventanas apuntando a diferentes direcciones
+var ventana=1;
+function abrirventana() {
+    switch(ventana){
+        case 1: direccion = "http://darwin.50webs.com"; break;
+        case 2: direccion = "http://es.wikipedia.org"; break;
+        case 3: direccion = "https://openlibra.com/es/book/redes-neuronales-parte-1"; break;
+    }
+    ventana++;
+    if (ventana==4) ventana=1;
+    window.open(direccion, "_blank", "width=400,height=300"); 
+}
+</script></head>
+<body>
+    <input type="button" value="Abrir ventana" onclick="abrirventana()" />
+</body></html>
