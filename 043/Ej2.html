@@ -1,0 +1,19 @@
+<!DOCTYPE HTML><html><head><script>
+class Nodo {
+	constructor(valorA, valorB){
+		this.valA = valorA;
+		this.valB = valorB;
+	}
+}
+
+//Trabaja como una pila
+var lista = new Array();
+lista.push(new Nodo(17, "a"));
+lista.push(new Nodo(43, "z"));
+lista.push(new Nodo(85, "d"));
+
+lista.pop(); //quita el último elemento adicionado
+
+for (cont=0; cont<lista.length; cont++)
+	document.write(lista[cont].valA + ", " + lista[cont].valB + "<br>");
+</script></head></html>

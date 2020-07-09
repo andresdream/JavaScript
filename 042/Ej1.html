@@ -1,0 +1,24 @@
+<!DOCTYPE HTML><html><head><script>
+//Definir una clase
+class Nodo {
+	//Constructor de la clase
+	constructor(valor, izq, der){
+		this.valor = valor;
+		this.izquierdo = izq;
+		this.derecho = der;
+	}
+}
+
+var NodoRaiz = new Nodo(1, null, null); //Nodo raíz
+var NodoIzq = new Nodo(2, null, null); //Rama izquierda
+var NodoDer = new Nodo(3, null, null); //Rama derecha
+
+//El nodo raíz conecta a la izquierda y derecha
+NodoRaiz.izquierdo = NodoIzq;
+NodoRaiz.derecho = NodoDer;
+
+//Imprime los valores del árbol
+document.write(NodoRaiz.valor + "<br>");
+document.write(NodoRaiz.izquierdo.valor + "<br>");
+document.write(NodoRaiz.derecho.valor + "<br>");
+</script></head></html>
